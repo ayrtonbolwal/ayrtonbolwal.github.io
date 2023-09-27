@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ayrton Bolwal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="contenido">
+        <nav class="nav">
+          <a href="">ayrtonbolwal</a>
+          <ul>
+            <li href="#">Sobre mí</li>
+            <li href="#">Blog</li>
+            <li href="#">Github</li>
+            <li href="#">Contacto</li>
+          </ul>
+        </nav>
+        <h1>Ayrton Bolwal <br />FrontEnd Developer</h1>
+        <ul class="icons_list">
+          <li>
+            <box-icon name="github" type="logo" color="#ffffff"></box-icon>
+          </li>
+          <li><box-icon type="logo" name="git" color="#ffffff"></box-icon></li>
+          <li>
+            <box-icon name="html5" type="logo" color="#ffffff"></box-icon>
+          </li>
+          <li><box-icon name="css3" type="logo" color="#ffffff"></box-icon></li>
+          <li>
+            <box-icon name="javascript" type="logo" color="#ffffff"></box-icon>
+          </li>
+          <li>
+            <box-icon name="react" type="logo" color="#ffffff"></box-icon>
+          </li>
+          <li>
+            <box-icon name="figma" type="logo" color="#ffffff"></box-icon>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-header"></div>
+    </header>
+    <section class="section-1">
+      <h2>Ayrton Bolwal</h2>
+      <p>
+        ¡Hola! Bienvenido a mi cueva de desarrollo, la piedra angular de mi
+        carrera profesional como FrontEnd Developer y UI designer.
+      </p>
+      <button class="primary-buttons" id="btnStory">Conoce mi historia</button>
+    </section>
+    <section class="section-2">
+      <div class="contenido">
+        <div>
+          <h2>FrontEnd y UI</h2>
+        </div>
+        <div>
+          <h3>Ingeniero de Software y Desarrollador Web</h3>
+          <p>
+            Soy un desarrollador inmiscuido en el mundo de la programación desde
+            hace más de 5 años, egresado como Ingeniero de Software por la
+            Universidad Veracruzana.
+          </p>
+          <ul>
+            <li>Participante de hackatones</li>
+            <li>Diseñador de interfaces de usuario</li>
+            <li>Desarrollador web</li>
+            <li>Ponente conferencista</li>
+            <li>Google Developer Group Member</li>
+            <li>Tutor de programación</li>
+          </ul>
+      </div>
+  
+      </div>
+    </section>
+    <section class="section-3">
+      <h2>Mi proceso de trabajo</h2>
+      <div class="items">
+        <div class="item">
+          <h3>Planeación</h3>
+          <p>En base a tus requerimiento realizo tu plan de trabajo</p>
+        </div>
+        <div class="item">
+          <h3>Modelado</h3>
+          <p>Antes de poner manos a la obra preparemos el terreno de juego</p>
+        </div>
+        <div class="item">
+          <h3>Desarrollo</h3>
+          <p>Vamos a trabajar como mejor sabemos codeando</p>
+        </div>
+        <div class="item">
+          <h3>Prueba</h3>
+          <p>La calidad yace en la verificación de pruebas</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-4">
+      <div class="item">
+        <h3>¿Qué esperas? Manos a la obra</h3>
+        <div class="buttons">
+          <button class="primary-buttons">Contáctame</button>
+          <button class="primary-buttons">ayrtonbolwal@gmail.com</button>
+          <button class="primary-buttons">Córdoba, México</button>
+        </div>
+      </div>
+      <div class="item">
+        <h3>Conoce mis repos</h3>
+        <div class="buttons">
+          <button class="primary-buttons">Github</button>
+          <button class="primary-buttons">Behance</button>
+        </div>
+      </div>
+      <div class="item">
+        <h3>Disfruta mis sitios</h3>
+        <div class="buttons">
+          <button class="primary-buttons">Pages</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="">
+        <h4>ayrtonbolwal</h4>
+        <ul>
+          <li>
+            <box-icon name="github" type="logo" color="#ffffff"></box-icon>
+          </li>
+          <li>
+            <box-icon name="twitter" type="logo" color="#ffffff"></box-icon>
+          </li>
+          <li>
+            <box-icon
+              name="facebook-circle"
+              type="logo"
+              color="#ffffff"
+            ></box-icon>
+          </li>
+          <li>
+            <box-icon name="youtube" type="logo" color="#ffffff"></box-icon>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
