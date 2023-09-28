@@ -33,15 +33,22 @@ body .nav {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-body .nav .hero-name {
-  font-weight: 700;
+@media (max-width: 576px) {
+  body .nav {
+    padding: 2rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 993px) {
+  body .nav {
+    padding: 2rem;
+  }
 }
 body .nav ul {
   display: flex;
@@ -50,6 +57,48 @@ body .nav ul {
   align-items: center;
   gap: 2rem;
   list-style: none;
+}
+body .nav #menuButton {
+  display: none;
+}
+body .nav .mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #111111;
+  padding: 2rem;
+}
+body .nav .mobile-menu .closeButton {
+  align-self: flex-end;
+}
+body .nav .mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0rem;
+  width: 100%;
+}
+body .nav .mobile-menu ul li {
+  width: 100%;
+  height: fit-content;
+  height: 100px;
+}
+body .nav .mobile-menu ul li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
 }
 body .header {
   position: relative;
@@ -83,6 +132,7 @@ body .header .content h1 {
 body .header .content ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -98,6 +148,16 @@ body .introducing {
   gap: 2rem;
   text-align: center;
   padding: 5rem 10rem;
+}
+@media (max-width: 576px) {
+  body .introducing {
+    padding: 2rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 993px) {
+  body .introducing {
+    padding: 2rem;
+  }
 }
 body .introducing p {
   width: 50%;
@@ -161,6 +221,16 @@ body .story {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+@media (max-width: 576px) {
+  body .story {
+    padding: 2rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 993px) {
+  body .story {
+    padding: 2rem;
+  }
+}
 body .story .content {
   grid-column: 1/4;
   display: flex;
@@ -168,6 +238,7 @@ body .story .content {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
+  padding-right: 10rem;
 }
 body .story .content ul {
   list-style: square;
@@ -196,6 +267,16 @@ body .workflow {
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   background-color: #111111;
+}
+@media (max-width: 576px) {
+  body .workflow {
+    padding: 2rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 993px) {
+  body .workflow {
+    padding: 2rem;
+  }
 }
 body .workflow h2 {
   grid-column: 1/5;
@@ -229,6 +310,16 @@ body .contact {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+@media (max-width: 576px) {
+  body .contact {
+    padding: 2rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 993px) {
+  body .contact {
+    padding: 2rem;
+  }
+}
 body .contact .item-contact {
   display: flex;
   flex-direction: column;
@@ -260,6 +351,16 @@ body .footer {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 576px) {
+  body .footer {
+    padding: 2rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 993px) {
+  body .footer {
+    padding: 2rem;
+  }
+}
 body .footer .col-1 {
   display: flex;
   flex-direction: column;
@@ -282,6 +383,158 @@ body .footer .col-2 ul {
   align-items: center;
   gap: 2rem;
   list-style: none;
+}
+
+@media screen and (max-width: 576px) {
+  body .nav ul {
+    display: none;
+  }
+  body .nav #menuButton {
+    display: block;
+  }
+  body .header {
+    margin-bottom: 4rem;
+  }
+  body .header .bg-main {
+    width: auto;
+    height: 100%;
+  }
+  body .header .content h1 {
+    font-size: 2rem;
+  }
+  body .header .content ul {
+    gap: 0.5rem;
+  }
+  body .introducing {
+    margin-bottom: 4rem;
+    padding: 5rem 10rem;
+  }
+}
+@media screen and (max-width: 576px) and (max-width: 576px) {
+  body .introducing {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 576px) and (min-width: 576px) and (max-width: 993px) {
+  body .introducing {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  body .introducing p {
+    width: 100%;
+  }
+  body .projects {
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(1, 1fr) !important;
+    height: 500px;
+  }
+  body .projects .item-project img {
+    width: 100%;
+    height: auto;
+  }
+  body .projects .item-project .content {
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+  body .story {
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 4rem;
+    height: fit-content;
+  }
+  body .story .content {
+    grid-column: 1/2;
+    padding-right: 0;
+  }
+  body .story .content-img {
+    grid-column: 1/2;
+  }
+  body .story .content-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  body .workflow {
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  body .workflow h2 {
+    grid-column: 1/2;
+  }
+  body .workflow .item-wf .header {
+    background-color: transparent;
+    margin-bottom: 0;
+  }
+  body .contact {
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  body .footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+  body .footer .col-2 ul {
+    flex-flow: row wrap;
+  }
+}
+@media (min-width: 576px) and (max-width: 993px) {
+  body .header .bg-main {
+    width: auto;
+    height: 100%;
+  }
+  body .introducing p {
+    width: 80%;
+  }
+  body .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body .projects .item-project img {
+    width: 100%;
+    height: auto;
+  }
+  body .projects .item-project .content {
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+  body .story {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 4rem;
+    height: fit-content;
+  }
+  body .story .content {
+    grid-column: 1/2;
+    padding-right: 0;
+  }
+  body .story .content-img {
+    grid-column: 1/2;
+  }
+  body .story .content-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  body .workflow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body .workflow h2 {
+    grid-column: 1/3;
+  }
+  body .footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+  body .footer .col-2 ul {
+    flex-flow: row wrap;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
